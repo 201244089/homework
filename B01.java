@@ -6,7 +6,7 @@ class B01{
 	void input(){
 		Scanner s = new scanner(System.in);
 		System.out.println("Input your birth year....");
-		birth_year
+		birth_year = s.nextInt();
 	
 	}
 
