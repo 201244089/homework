@@ -1,30 +1,41 @@
 
 
 import java.util.*;
-public class AgeConfirm{
-    int birth_year = 0;
-        int age = 0;
+public class DegreeTrans{
+	Scanner Input = new Scanner(System.in);
+	double input_degree;
+	String kind;
+	double output_degree;
 	            
-		         public AgeConfirm(){}
+		        public DegreeTrans(){}
 			 
-			 public void BirthInput(){
-			 	Scanner Input = new Scanner(System.in);
-				System.out.print("태어난 년도를 입력하십시오.  ");
-				birth_year = Input.nextInt();
+			public void DegreeInput(){
+			 	System.out.print("온도를 입력하세요.  ");
+				input_degree = Input.nextDouble();
 				}
-			 public void Confirm(){
-			 	age = 2016 - birth_year;
-				if(age < 20)
-					System.out.print("미성년자입니다. ");
-				else
-					System.out.print("미성년자가 아닙니다.  ");
+			public void Trans(){
+			 	System.out.print("입력하신 온도가 섭씨온도이면 C를 화씨 온도이면 F를 입력하세요");
+				kind = Input.next().toString();
+				}
+			public void DegreeOutput(){
+				if(kind.equals("F")){
+					output_degree = (input_degree-32)/1.8;
+					System.out.print("변환된 온도는 "+output_degree+"입니다");
+				}
+				if(kind.equals("C")){
+					output_degree = (input_degree*1.8)+32;
+					System.out.print("변환된 온도는 "+output_degree+"입니다");
+				}
+				
 
-					}
+			}
+
 			public static void main(String[] args){
-				AgeConfirm Age = new AgeConfirm();
+				DegreeTrans degree = new DegreeTrans();
 
-				Age.BirthInput();
-				Age.Confirm();
+				degree.DegreeInput();
+				degree.Trans();
+				degree.DegreeOutput();
 
 				}
 			}
