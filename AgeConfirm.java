@@ -1,7 +1,7 @@
-package ageconfirm;
+
 
 import java.util.*;
-public class AgeConfirm {
+public class AgeConfirm{
     int birth_year = 0;
         int age = 0;
 	            
@@ -17,13 +17,13 @@ public class AgeConfirm {
 				if(age < 20)
 					System.out.print("미성년자입니다. ");
 				else
-					System.out.print("미성년자가 아닙니다.  ")
+					System.out.print("미성년자가 아닙니다.  ");
 
 					}
 			public static void main(String[] args){
-				AgeConfirm Age = new AgeConfrim();
+				AgeConfirm Age = new AgeConfirm();
 
-				age.BirthInput();
+				Age.BirthInput();
 				Age.Confirm();
 
 				}
