@@ -52,7 +52,7 @@ import java.util.*;
 		}
 
 		public static void main(String[] args){
-			A06 a = new A06;
+			A06 a = new A06();
 			a.Input();
 			a.Avgcal();
 			a.GradeSelect();
