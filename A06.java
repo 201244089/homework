@@ -6,7 +6,6 @@ import java.util.*;
 		int math;
 		int eng;
 		double avg;
-		String avg2 = String.format("%.2f", avg);
 		String grade;
 		
 		A06(){}
@@ -47,7 +46,7 @@ import java.util.*;
 
 		public void Output(){
 			System.out.println("["+name+"]님은");
-			System.out.println("평균은 "+ avg2 + "이고");
+			System.out.println("평균은 "+ avg + "이고");
 			System.out.print("학점은 "+grade+"입니다");
 		}
 
